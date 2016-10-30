@@ -23,31 +23,31 @@
 \begin{document}
 
     %Basic configuration
-    \title{Panduan Tugas Akhir Informatika}
+    \title{Ekstraksi Informasi Data Tabular Semi-Terstuktur menjadi Data Terstruktur pada Laman Web Pendidikan dan Penelitian ITB}
     \date{}
     \author{
-        Peb Ruswono Aryan \\
-        NIM 13502044
+        Ahmad Darmawan \\
+        NIM 13513096
     }
 
     \pagenumbering{roman}
     \setcounter{page}{0}
 
     \input{chapters/cover}
-    \input{chapters/approval}
-    \input{chapters/statement}
+    %\input{chapters/approval}
+    %\input{chapters/statement}
 
     \pagestyle{plain}
 
-    \input{chapters/abstract-id}
-    \input{chapters/abstract-en}
-    \input{chapters/forewords}
+    %\input{chapters/abstract-id}
+    %\input{chapters/abstract-en}
+    %\input{chapters/forewords}
 
     \titleformat*{\section}{\centering\bfseries\Large\MakeUpperCase}
 
-    \tableofcontents
-    \listoffigures
-    \listoftables
+    %\tableofcontents
+    %\listoffigures
+    %\listoftables
 
     \titleformat*{\section}{\bfseries\Large}
     \pagenumbering{arabic}
@@ -65,22 +65,29 @@
     % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
     %----------------------------------------------------------------%
     \input{chapters/chapter-1}
-    \input{chapters/chapter-2}
-    \input{chapters/chapter-3}
-    \input{chapters/chapter-4}
-    \input{chapters/chapter-5}
+    %\input{chapters/chapter-2}
+    %\input{chapters/chapter-3}
+    %\input{chapters/chapter-4}
+    %\input{chapters/chapter-5}
     %----------------------------------------------------------------%
 
     % Daftar pustaka
-    \printbibliography
+    % Bibliography to Daftar Pustaka
+    %\renewcommand{\bibname}{Daftar Pustaka}
+    %\cleardoublepage
+    %\phantomsection
+    %\addcontentsline{toc}{chapter}{Daftar Pustaka}
+    %\printbibliography
 
     % Index
-    \appendix
+    %\appendix
 
-    \addcontentsline{toc}{part}{Lampiran}
-    \part*{Lampiran}
+    %\cleardoublepage
+    %\phantomsection
+    %\addcontentsline{toc}{part}{Lampiran}
+    %\part*{Lampiran}
 
-    \input{chapters/appendix-1}
-    \input{chapters/appendix-2}
+    %\input{chapters/appendix-1}
+    %\input{chapters/appendix-2}
 
 \end{document}

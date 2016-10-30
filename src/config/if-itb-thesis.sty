@@ -25,6 +25,7 @@
 \usepackage[backend=bibtex,citestyle=authoryear]{biblatex}
 
 \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{titling}
 \usepackage{blindtext}
@@ -38,12 +39,16 @@
 % Line satu setengah spasi
 \renewcommand{\baselinestretch}{1.5}
 
+% Add comma between Author and Year
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
 % Setting judul
 \chapterfont{\centering \Large}
 \titleformat{\chapter}[display]
   {\Large\centering\bfseries}
   {\chaptertitlename\ \thechapter}{0pt}
     {\Large\bfseries\uppercase}
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 
 % Setting nomor pada subbsubsubbab
 \setcounter{secnumdepth}{3}
